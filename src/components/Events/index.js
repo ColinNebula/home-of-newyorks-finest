@@ -27,7 +27,7 @@ export const Events = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Button variant="outline-primary">Go somewhere</Button>{' '}
+        <Button variant="outline-primary">Learn more</Button>{' '}
         <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
@@ -46,7 +46,7 @@ export const Events = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Button variant="outline-primary">Go somewhere</Button>{' '}
+        <Button variant="outline-primary">Learn more</Button>{' '}
         <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
@@ -66,7 +66,7 @@ export const Events = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Button variant="outline-primary">Go somewhere</Button>{' '}
+        <Button variant="outline-primary">Learn more</Button>{' '}
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>

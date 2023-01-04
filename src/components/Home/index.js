@@ -25,7 +25,7 @@ export const Home = () => {
       <Card.ImgOverlay>
         <Card.Title>Party In NYC</Card.Title>
         <Card.Text>
-          Party with the best of the best DJs in the city. Follow us on social media for the latest music and hottest artist around new york.
+          Party with the best of the best DJs in the city. Follow us on social media for the latest music and hottest artist around New York City.
         </Card.Text>
         <Button variant="outline-primary" onClick={() => 'events'}>Go to events</Button>{' '}
         <Card.Text>Last updated 3 mins ago</Card.Text>
