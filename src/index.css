@@ -43,6 +43,22 @@ footer {
   padding: 20px;
 }
 
+.events-p {
+  text-align: center;
+  color: white;
+}
+
+.mid-p {
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
+.top-p {
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
+
 .videos {
   text-align: center;
   color: white;

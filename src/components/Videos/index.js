@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Card, CardGroup, Button, Modal } from 'react-bootstrap';
+import { Card, CardGroup, Button, Modal, Container, Row, Col, NavDropdown } from 'react-bootstrap';
+import { SocialIcon } from 'react-social-icons';
 export const Videos = () => {
   const [lgShow, setLgShow] = useState(false);
   return (
@@ -37,6 +38,7 @@ export const Videos = () => {
       </Modal>
     </>
     </div>
+    <Container fluid>
     <CardGroup>
     <Card className="bg-dark text-white" style={{ width: '25rem'}}>
       <Card.Img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6-xXvJxQYy7IQi8g6mqcQgHaEK%26pid%3DApi&f=1&ipt=cc7d54d75a6793aee31e4cefe4145e9cc92bac1fbe847a1b95966e0dade2e5e5&ipo=images/100px270" alt="Card image" />
@@ -64,7 +66,24 @@ export const Videos = () => {
       </Card.ImgOverlay>
     </Card>
     </CardGroup>
+    <NavDropdown.Divider />
+  <Container fluid>
+  <Row>
+  <Col className="icons">
+  <div>
+  <br />
+  <SocialIcon url="https://youtube.com/" network="youtube"  />
+
+  <SocialIcon url="https://www.linkedin.com/in/" network="linkedin" />
+
+  <SocialIcon url="mailto:colinnebula@gmail.com" network="mailto" bgColor="#ff5a01" />
+  </div>
+    </Col>
+
     
+    </Row>
+</Container>
+</Container>
     </div>
   )
 }

@@ -1,14 +1,47 @@
-import React from 'react'
-import { Card, CardGroup, Button  } from 'react-bootstrap';
+import React, { useState } from 'react'
+import { Card, CardGroup, Button, Modal, NavDropdown, Container, Row, Col  } from 'react-bootstrap';
+import { SocialIcon } from 'react-social-icons';
 
 export const Events = () => {
+  const [lgShow, setLgShow] = useState(false);
   return (
     <div>
-    <h2 class='events'>
-    Our events are best in the New York city. Stay in the know, and get frequently updated.
-    </h2>
-    
 
+    <h2 class='events'>
+    Our events are best in the New York city. 
+    
+    </h2>
+    <p className="events-p">
+    Stay in the know, and get frequently updated. 
+    </p>
+    <>
+      <Modal
+        size="lg"
+        show={lgShow}
+        onHide={() => setLgShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-modal-sizes-title-lg">
+            What we do
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Nibh cras pulvinar mattis nunc. Mollis aliquam ut porttitor leo a. 
+          Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. 
+          Volutpat diam ut venenatis tellus in metus vulputate.
+
+          </p>
+          <a src href="https://react-bootstrap.github.io/components/modal/"> This link to youtube</a>
+          <Card.Img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Froutenote.com%2Fblog%2Fwp-content%2Fuploads%2F2017%2F09%2FDJ.jpg&f=1&nofb=1&ipt=ddb0176cf1104a4d07576f128b48c3797be67004d74087a891a247c025d50dfa&ipo=images/100px270" className="rounded" alt="Card image" />
+          
+        
+        </Modal.Body>
+      </Modal>
+    </>
+    <Container fluid>
     <CardGroup fluid>
       <Card className="bg-dark text-white shadow-md" style={{ width: '25rem'}}>
         <Card.Img variant="top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.P5UtNzsLOx4lz8tdvlaMmgHaEo%26pid%3DApi&f=1&ipt=db6d42ef7d8b44396b6e17e37cbb061464a1c0f42bc3f8838703dbb5ba2f0d94&ipo=images/100px160" />
@@ -27,7 +60,7 @@ export const Events = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Button variant="outline-primary">Learn more</Button>{' '}
+        <Button variant="outline-primary" onClick={() => setLgShow(true)}>Learn more</Button>{' '}
         <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
@@ -46,7 +79,7 @@ export const Events = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Button variant="outline-primary">Learn more</Button>{' '}
+        <Button variant="outline-primary" onClick={() => setLgShow(true)}>Learn more</Button>{' '}
         <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
@@ -66,12 +99,31 @@ export const Events = () => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Button variant="outline-primary">Learn more</Button>{' '}
+        <Button variant="outline-primary" onClick={() => setLgShow(true)}>Learn more</Button>{' '}
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
     </CardGroup>
+    <NavDropdown.Divider />
+  <Container fluid>
+  <Row>
+  <Col className="icons">
+  <div>
+  <br />
+  <SocialIcon url="https://youtube.com/" network="youtube"  />
+
+  <SocialIcon url="https://www.linkedin.com/in/" network="linkedin" />
+
+  <SocialIcon url="mailto:colinnebula@gmail.com" network="mailto" bgColor="#ff5a01" />
+  </div>
+    </Col>
+
+    
+    </Row>
+</Container>
+</Container>
     </div>
+    
   )
 }
 
