@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/home-of-newyorks-finest/static/css/main.c658aa39.css",
-    "main.js": "/home-of-newyorks-finest/static/js/main.d7fe9b40.js",
+    "main.css": "/home-of-newyorks-finest/static/css/main.7f083bc5.css",
+    "main.js": "/home-of-newyorks-finest/static/js/main.664beecd.js",
     "static/js/787.a5db9dd1.chunk.js": "/home-of-newyorks-finest/static/js/787.a5db9dd1.chunk.js",
     "static/media/logo.png": "/home-of-newyorks-finest/static/media/logo.133b0fb42e03a41eb7c7.png",
     "index.html": "/home-of-newyorks-finest/index.html",
-    "main.c658aa39.css.map": "/home-of-newyorks-finest/static/css/main.c658aa39.css.map",
-    "main.d7fe9b40.js.map": "/home-of-newyorks-finest/static/js/main.d7fe9b40.js.map",
+    "main.7f083bc5.css.map": "/home-of-newyorks-finest/static/css/main.7f083bc5.css.map",
+    "main.664beecd.js.map": "/home-of-newyorks-finest/static/js/main.664beecd.js.map",
     "787.a5db9dd1.chunk.js.map": "/home-of-newyorks-finest/static/js/787.a5db9dd1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c658aa39.css",
-    "static/js/main.d7fe9b40.js"
+    "static/css/main.7f083bc5.css",
+    "static/js/main.664beecd.js"
   ]
 }
