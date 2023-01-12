@@ -13,6 +13,7 @@ export const Home = () => {
         <div>
         <>
       <Modal
+      
         size="lg"
         show={lgShow}
         onHide={() => setLgShow(false)}
@@ -32,9 +33,26 @@ export const Home = () => {
 
           </p>
           <Card.Img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Froutenote.com%2Fblog%2Fwp-content%2Fuploads%2F2017%2F09%2FDJ.jpg&f=1&nofb=1&ipt=ddb0176cf1104a4d07576f128b48c3797be67004d74087a891a247c025d50dfa&ipo=images/100px270" className="rounded" alt="Card image" />
-          <a href="https://react-bootstrap.github.io/components/modal/"></a>
-        
+          
+    <br />
+  <NavDropdown.Divider />
+  <Container fluid>
+  <Row>
+  <Col className="icons">
+  <div>
+  <SocialIcon url="https://youtube.com/" network="youtube"  />
+
+  <SocialIcon url="https://www.linkedin.com/in/" network="linkedin" />
+
+  <SocialIcon url="mailto:colinnebula@gmail.com" network="mailto" bgColor="#ff5a01" />
+  </div>
+    </Col>
+
+    
+    </Row>
+</Container>
         </Modal.Body>
+        
       </Modal>
     </>
         </div>
