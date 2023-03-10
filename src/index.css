@@ -4,7 +4,7 @@
 
 main {
   background: linear-gradient(90deg,
-      #5f4e7b,
+      #231c2e,
       #626269);
   padding-bottom: 55px;
   
@@ -75,4 +75,30 @@ footer {
   text-align: center;
   color: white;
   padding: 20px;
+}
+
+.rights {
+	text-align: center;
+	color: white;
+	padding: 5px;
+	transition: 0.6s;
+	transform: scale(1);
+	transition:transform 0.6s ease;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-around;
+}
+
+.icons {
+	display: inline-block;
+	transition: 0.5s;
+	transform: scale(1);
+	transition:transform 0.6s ease;
+}
+
+.icons:hover {
+	transform: 0.4s ease-in-out transform;
+	transform: translateY(5px);
 }

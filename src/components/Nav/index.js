@@ -21,8 +21,8 @@ function Navigation(props) {
             <span onClick={() => setCurrentTab("home")}>Home</span>
             </Nav.Link>
 
-            <Nav.Link className={currentTab === "events" ? "mx-2 navActive" : "mx-2"}>
-            <span onClick={() => setCurrentTab("events")}>Events</span>
+            <Nav.Link className={currentTab === "ReactImageGallery" ? "mx-2 navActive" : "mx-2"}>
+            <span onClick={() => setCurrentTab("ReactImageGallery")}>Photo Gallery</span>
             </Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item className={currentTab === "videos" ? "mx-2 navActive" : "mx-2"}>

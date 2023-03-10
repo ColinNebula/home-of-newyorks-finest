@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import Events from './components/Events';
+import Gallery from './components/ReactImageGallery';
 import Videos from './components/Videos';
 import 'react-notifications-component/dist/theme.css';
 import { ReactNotifications } from 'react-notifications-component'
@@ -19,8 +19,8 @@ function App() {
       case "home":
         return <Home />;
       
-      case "events":
-        return <Events />
+      case "ReactImageGallery":
+        return <Gallery />
 
       case "videos":
         return <Videos />
